@@ -1,0 +1,14 @@
+.btn-primary {
+    background: linear-gradient(to right, #17d396, #07f7f7);
+    color: white;
+    /* display: inline-block; */
+    font-size: 14px;
+    padding: 14px 22px;
+    text-align: center;
+    font-weight: 700;
+    width: fit-content;
+  }
+  .btn-primary:hover {
+    box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+  }
+  
