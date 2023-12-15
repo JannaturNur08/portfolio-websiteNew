@@ -1,6 +1,6 @@
 a.active {
 	color:#64ffda ;
-    
+   list-style: none; 
 }
 .sticky-header {
     position: fixed;
