@@ -2,7 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
-import Projects from "../pages/Projects/Projects";
+
+
+import {
+	
+	AnchorProvider,
+	
+  } from "react-anchor-navigation";
 
 export const router = createBrowserRouter([
 	{
@@ -12,14 +18,13 @@ export const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
-				element: <Home></Home>,
+				element: <AnchorProvider>
+					<Home></Home>
+				</AnchorProvider>,
 			},
 
-			{
-				path: "/projects",
-				element: <Projects></Projects>,
-			},
 			
+		
 		],
 	},
 ]);

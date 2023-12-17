@@ -1,51 +1,67 @@
 import { Link, NavLink } from "react-router-dom";
+
 import "./Navbar.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AnchorContext, AnchorLink } from "react-anchor-navigation";
 
 const Navbar = () => {
 	const [isMenuOpen, setMenuOpen] = useState(false);
+	const { hash, sections } = useContext(AnchorContext);
+
+	const closeMenu = () => {
+		setMenuOpen(false);
+	};
+
 	const navOptions = (
 		<>
+			
 			<li>
-				<NavLink
-					to="/"
+				<AnchorLink
+					href="#about"
+					activeClassName="active"
 					className={({ isActive, isPending }) =>
 						isPending ? "pending" : isActive ? "active " : ""
-					}>
+					}
+					onClick={closeMenu}>
 					About
-				</NavLink>
+				</AnchorLink>
 			</li>
 			<li>
-				<NavLink
-					to="/experience"
+				<AnchorLink
+					href="#experience"
+					activeClassName="active"
 					className={({ isActive, isPending }) =>
 						isPending ? "pending" : isActive ? "active " : ""
-					}>
+					}
+					onClick={closeMenu}>
 					Experience
-				</NavLink>
+				</AnchorLink>
 			</li>
 			<li>
-				<NavLink
-					to="/portfolio"
+				<AnchorLink
+					href="#portfolio"
+					activeClassName="active"
 					className={({ isActive, isPending }) =>
 						isPending ? "pending" : isActive ? "active " : ""
-					}>
+					}
+					onClick={closeMenu}>
 					Portfolio
-				</NavLink>
+				</AnchorLink>
 			</li>
 			<li>
 				<NavLink
 					to="/contact"
 					className={({ isActive, isPending }) =>
 						isPending ? "pending" : isActive ? "active " : ""
-					}>
+					}
+					onClick={closeMenu}>
 					Contact
 				</NavLink>
 			</li>
 		</>
 	);
 	return (
-		<div className="flex justify-between sticky h-7 py-5 mx-auto container">
+		<div className="flex justify-between sticky-header  h-7 py-5 mx-auto container">
 			<div>
 				<img
 					src="https://i.ibb.co/Nt41bYK/logo-1.png"
@@ -104,13 +120,17 @@ const Navbar = () => {
 			</div>
 
 			{/* Desktop navigation */}
-			<div className="hidden lg:flex p-5 text-center items-center justify-center gap-10 font-mono list-none">
-				{navOptions}
-				<Link to="/hire-me">
-					<button className="button-primary items-center justify-center ">
-						Hire me
-					</button>
-				</Link>
+			<div className="sticky-header">
+				
+				<div className="hidden lg:flex  p-5 text-center items-center justify-center gap-10 font-mono list-none">
+					{navOptions}
+
+					<Link to="/hire-me">
+						<button className="button-primary items-center justify-center ">
+							Hire me
+						</button>
+					</Link>
+				</div>
 			</div>
 		</div>
 	);

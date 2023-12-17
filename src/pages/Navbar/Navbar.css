@@ -1,4 +1,4 @@
-a.active {
+.active {
 	color:#64ffda ;
    list-style: none; 
 }
@@ -7,12 +7,13 @@ a.active {
     top: 0;
     left: 0;
    width: 100%;
-   padding: 20px 100px 20px 100px;
+   padding: 0px;
      background-color: transparent;
     /* color: #fff; */ 
     
     /* text-align: center;
     z-index: 100;  */
+    z-index: 100;
 }
 
 
