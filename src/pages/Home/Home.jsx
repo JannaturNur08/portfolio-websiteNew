@@ -6,16 +6,16 @@ import { AnchorSection } from "react-anchor-navigation";
 
 const Home = () => {
 	return (
-		<div className="mx-auto">
+		<div className="max-w-7xl mx-auto">
 			<div className="mt-40">
 				<Banner></Banner>
 			</div>
 
-		<div className="mt-40 pt-20">
-    <AnchorSection className="dBlock anchor" id="about">
-				<About></About>
-			</AnchorSection>
-    </div>
+			<div className="mt-60 pt-40">
+				<AnchorSection className="dBlock anchor" id="about">
+					<About></About>
+				</AnchorSection>
+			</div>
 
 			<AnchorSection className="dBlock anchor" id="experience">
 				<Experience></Experience>

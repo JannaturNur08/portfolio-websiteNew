@@ -2,10 +2,10 @@
 
 const Experience = () => {
     return (
-        <div className="mt-40 h-[500px]" >
-            <h2>Experience</h2>
+        <div className="pt-80 h-[500px]" >
+            <h2 className="text-5xl font-openSans font-bold">Where I've Worked</h2>
             <div>
-                <p>Ilove you my butt i love my boobs</p>
+                <p>3D Artist @<a href="https://playense.com/">Playense</a></p>
             </div>
         </div>
     );
