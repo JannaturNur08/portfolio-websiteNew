@@ -50,7 +50,7 @@ const About = () => {
 			</div>
 			<div className="">
 				<img
-					src="/public/nur.png"
+					src="https://i.ibb.co/TcjhCFQ/394865229-166709613170184-4566337752726610918-n-1-removebg.png"
 					alt=""
 					className="  w-3/4 rounded-full"
 				/>
