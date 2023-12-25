@@ -3,6 +3,7 @@ import About from "../../components/About";
 import Experience from "../../components/Experience";
 import Projects from "../../components/Projects";
 import { AnchorSection } from "react-anchor-navigation";
+import Contact from "../../components/Contact";
 
 const Home = () => {
 	return (
@@ -21,9 +22,16 @@ const Home = () => {
 				<Experience></Experience>
 			</AnchorSection>
 
+			<div className="mt-60 pt-40">
 			<AnchorSection className="dBlock anchor" id="portfolio">
 				<Projects></Projects>
 			</AnchorSection>
+			</div>
+			<div className="mt-60 pt-40 mb-20">
+			<AnchorSection className="dBlock anchor" id="contact">
+				<Contact></Contact>
+			</AnchorSection>
+			</div>
 		</div>
 	);
 };

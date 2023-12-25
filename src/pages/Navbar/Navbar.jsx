@@ -14,7 +14,6 @@ const Navbar = () => {
 
 	const navOptions = (
 		<>
-			
 			<li>
 				<AnchorLink
 					href="#about"
@@ -47,16 +46,6 @@ const Navbar = () => {
 					onClick={closeMenu}>
 					Portfolio
 				</AnchorLink>
-			</li>
-			<li>
-				<NavLink
-					to="/contact"
-					className={({ isActive, isPending }) =>
-						isPending ? "pending" : isActive ? "active " : ""
-					}
-					onClick={closeMenu}>
-					Contact
-				</NavLink>
 			</li>
 		</>
 	);
@@ -109,11 +98,11 @@ const Navbar = () => {
 						</div>
 						<div className="flex flex-col items-center mt-10 space-y-5">
 							{navOptions}
-							<Link to="/hire-me">
+							<AnchorLink href="#contact">
 								<button className="button-primary items-center justify-center mt-2">
 									Hire me
 								</button>
-							</Link>
+							</AnchorLink>
 						</div>
 					</div>
 				)}
@@ -121,15 +110,14 @@ const Navbar = () => {
 
 			{/* Desktop navigation */}
 			<div className="sticky-header">
-				
 				<div className="hidden lg:flex  p-5 text-center items-center justify-center gap-10 font-mono list-none">
 					{navOptions}
 
-					<Link to="/hire-me">
-						<button className="button-primary items-center justify-center ">
+					<AnchorLink href="#contact">
+						<button className="button-primary items-center justify-center mt-2">
 							Hire me
 						</button>
-					</Link>
+					</AnchorLink>
 				</div>
 			</div>
 		</div>

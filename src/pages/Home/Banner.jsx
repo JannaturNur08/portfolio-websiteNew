@@ -1,6 +1,16 @@
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
+const PDF_URL = "http://localhost:5173/Resume_JannaturNur (2).pdf";
 const Banner = () => {
+	const downloadURL = (url) => {
+		const fileName = url.split("/").pop();
+		const aTag = document.createElement("a");
+		aTag.href = url;
+		aTag.setAttribute("download", fileName);
+		document.body.appendChild(aTag);
+		aTag.click();
+		aTag.remove();
+	};
 	return (
 		<div className="max-w-7xl mx-auto">
 			<div className="flex items-center justify-between mt-10">
@@ -23,7 +33,13 @@ const Banner = () => {
 					<div className="flex button-primary gap-2 ">
 						<FaCloudDownloadAlt className="text-primary  mt-1" />
 
-						<button> Check out my resume!</button>
+						<button
+							onClick={() => {
+								downloadURL(PDF_URL);
+							}} className="z-10">
+							{" "}
+							Check out my resume!
+						</button>
 					</div>
 				</div>
 			</div>

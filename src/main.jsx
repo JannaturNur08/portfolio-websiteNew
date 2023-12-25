@@ -20,7 +20,7 @@ document.body.onpointermove = (e) => {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<div className=" mx-auto">
+		<div className=" mx-auto overflow-hidden">
 			<AnchorProvider>
 				<RouterProvider router={router} />
 			</AnchorProvider>
