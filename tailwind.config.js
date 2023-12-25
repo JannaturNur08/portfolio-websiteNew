@@ -8,9 +8,8 @@ export default {
     extend: {
       fontFamily: {
        
-       openSans : "'Open Sans', sans-serif",
-       mono: "'Space Mono', monospace"
-       
+       hermit: "'hermit-regular',sans",
+       popins: ['Poppins', 'sans-serif']
       },
       colors : {
         primary : "#64ffda",

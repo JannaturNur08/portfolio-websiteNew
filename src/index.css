@@ -1,86 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color:#0A192F ; 
-    color: #CCD6F6 ;
+@font-face {
+	font-family: "hermit-regular";
+	src: url("../src/fonts/Hermit-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
 }
 
-
-html{
-  scroll-behavior: smooth;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #0a192f;
+	color: #ccd6f6;
+    
+	font-family: "Poppins", sans-serif;
+	
 }
 
-body{
-  margin: 0px !important;
-  padding: 0;
-  
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+}
+h2 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+h4 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+p{
+	font-size: 1rem;
+	font-weight: normal;
+	color: #8892b0;
+}
+
+body {
+	margin: 0px !important;
+	padding: 0;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 80px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background:#222A35;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #575C66;
-    border-radius: 6px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #626970;
-  }
+	width: 4px;
+	height: 80px;
+}
 
-  /* .button-primary{
+/* Track */
+::-webkit-scrollbar-track {
+	background: #222a35;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #575c66;
+	border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #626970;
+}
+
+/* .button-primary{
     @apply bg-transparent border px-5 py-2 rounded-md hover:drop-shadow-2xl  border-primary text-primary w-fit  font-mono;
   } */
 
-  .button-primary {
-    background-color: transparent;
-    border: 1px solid #64ffda; /* Replace with your actual border color */
-    padding: 10px 20px;
-    border-radius: 0.25rem;
-    transition: box-shadow 0.3s ease; /* Adding transition for a smoother effect */
-    font-family: mono;
-    color: #64ffda;
-    width: fit-content;
-  }
+.button-primary {
+	background-color: transparent;
+	border: 1px solid #64ffda; /* Replace with your actual border color */
+	padding: 10px 20px;
+	border-radius: 0.25rem;
+	transition: box-shadow 0.3s ease; /* Adding transition for a smoother effect */
+	font-family: mono;
+	color: #64ffda;
+	width: fit-content;
+}
 
-  .button-primary:hover {
-    box-shadow: 0 4px 6px #2eb797;
-    
-  }
+.button-primary:hover {
+	box-shadow: 0 4px #2eb797;
+}
 
-  #blob{
-    background-color: white;
-    height: 500px;
-    aspect-ratio: 1;
-   position: absolute;
-   border-radius: 50%;
-   left: 50%;
-   top: 50%;
-   opacity: 50%;
-   translate: -50% -50%;
-   background: linear-gradient(
-    to right,
-    aquamarine,
-    mediumpurple
-   );
-   filter: blur(200px);
-   
-  }
+.item-hover {
+	filter: drop-shadow(16px 16px 10px black);
+}
 
+/* #blob {
+	background-color: white;
+	height: 500px;
+	aspect-ratio: 1;
+	position: absolute;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	opacity: 50%;
+	translate: -50% -50%;
+	background: linear-gradient(to right, aquamarine, mediumpurple);
+	filter: blur(200px);
+} */

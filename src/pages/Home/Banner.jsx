@@ -14,17 +14,17 @@ const Banner = () => {
 	return (
 		<div className="max-w-7xl mx-auto">
 			<div className="flex items-center justify-between mt-10">
-				<div className="w-full space-y-7 ml-5">
-					<h3 className="lg:text-xl font-mono text-primary">
-						Hi, my name is
-					</h3>
-					<h1 className="lg:text-7xl mt-2 mb-5  font-openSans font-bold">
-						Jannatur Nur
-					</h1>
-					<p className="lg:text-7xl  font-openSans font-bold text-subTitleColor">
-						I build things for the web.
-					</p>
-					<p className="font-openSans lg:text-xl text-pColor">
+				<div className="w-full ml-5 flex flex-col gap-10">
+					<div>
+						<h4 className="font-mono text-primary">
+							Hi, my name is
+						</h4>
+						<h1 className="">Jannatur Nur</h1>
+						<h2 className=" text-subTitleColor">
+							I build things for the web.
+						</h2>
+					</div>
+					<p className="font-hermit text-pColor">
 						I am a MERN stack developer <br /> with experience in
 						building websites and applications <br /> using React,
 						Node.js, Express, MongoDB.
@@ -36,7 +36,8 @@ const Banner = () => {
 						<button
 							onClick={() => {
 								downloadURL(PDF_URL);
-							}} className="z-10">
+							}}
+							className="z-10 font-hermit">
 							{" "}
 							Check out my resume!
 						</button>
