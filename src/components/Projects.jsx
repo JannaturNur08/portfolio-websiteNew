@@ -3,13 +3,14 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Projects = () => {
 	return (
 		<div className="pt-40">
-			<h2>Some Things I’ve Built</h2>
+			<h2 className="mb-24">Some Things I’ve Built</h2>
 			{/* project 1 */}
 			<div className="flex relative mt-12 justify-center ">
-				<div className="w-3/4">
+				<div className="relative w-3/4">
+					<div className=" border-2 border-primary rounded-md w-full h-full absolute left-5 top-5 "></div>
 					<img
 						src="https://i.ibb.co/48956Ch/409468057-874265714229204-7514339199498190746-n.png"
-						className=""
+						className="grayscale hover:grayscale-0 rounded-md"
 						alt=""
 					/>
 				</div>
@@ -18,8 +19,9 @@ const Projects = () => {
 						Featured Project
 					</h5>
 					<h3>Tech Product Review</h3>
-					<div className="bg-[#112240]">
-						<p className="bg-[#112240] p-5 mt-5">
+
+					<div className="bg-[#112240] shadow-md">
+						<p className="bg-[#112240] p-5 mt-5  relative lg:w-[36rem] right-5  z-10">
 							The technology-centric platform allows users to
 							engage in discussions, explore featured and{" "}
 							<span className="text-primary bg-transparent">
@@ -28,6 +30,7 @@ const Projects = () => {
 							, and enjoy a dynamic community experience.
 						</p>
 					</div>
+
 					<div className="flex flex-row-reverse mt-3 gap-2 ">
 						<p>React </p>
 						<p>TailwindCSS</p>
@@ -52,8 +55,8 @@ const Projects = () => {
 						Featured Project
 					</h5>
 					<h3>Hotel Booking Website</h3>
-					<div className="bg-[#112240]">
-						<p className="bg-[#112240] p-5 mt-5">
+					<div className="bg-[#112240] shadow-md">
+						<p className="bg-[#112240] p-5 mt-5  relative lg:w-[36rem] left-5  z-10">
 							This{" "}
 							<span className="text-primary bg-transparent">
 								Hotel Booking
@@ -85,20 +88,22 @@ const Projects = () => {
 						</a>
 					</div>
 				</div>
-				<div className="w-3/4">
+				<div className=" relative w-3/4">
+					<div className=" border-2 border-primary rounded-md w-full h-full absolute left-5 top-5 "></div>
 					<img
 						src="https://i.ibb.co/XDNv5Dv/403399486-380727407952759-6691861232967913501-n.png"
-						className=""
+						className="grayscale hover:grayscale-0 rounded-md "
 						alt=""
 					/>
 				</div>
 			</div>
 			{/* project 3 */}
 			<div className="flex relative mt-32 justify-center ">
-				<div className="w-3/4">
+				<div className="w-3/4 relative">
+					<div className=" border-2 border-primary rounded-md w-full h-full absolute left-5 top-5 "></div>
 					<img
 						src="https://i.ibb.co/CPndcYh/410089181-387161817105373-5801356793707587277-n.png"
-						className=""
+						className="grayscale hover:grayscale-0 rounded-md  "
 						alt=""
 					/>
 				</div>
@@ -107,8 +112,8 @@ const Projects = () => {
 						Featured Project
 					</h5>
 					<h3>Automotive website</h3>
-					<div className="bg-[#112240]">
-						<p className="bg-[#112240] p-5 mt-5">
+					<div className="bg-[#112240] shadow-md">
+						<p className="bg-[#112240] p-5 mt-5  relative lg:w-[36rem] right-5  z-10">
 							Rev up your passion for cars with our{" "}
 							<span className="text-primary bg-transparent">
 								automotive website!

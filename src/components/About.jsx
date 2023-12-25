@@ -1,5 +1,10 @@
+
 import { FaArrowRight } from "react-icons/fa6";
+
+
 const About = () => {
+	
+	
 	return (
 		<div className=" flex flex-col md:flex-row justify-between gap-10 pt-40">
 			<div className="max-w-xl">
@@ -48,7 +53,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<div className="">
+			<div className="w-fit ">
 				<img
 					src="https://i.ibb.co/TcjhCFQ/394865229-166709613170184-4566337752726610918-n-1-removebg.png"
 					alt=""

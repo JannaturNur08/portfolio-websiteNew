@@ -95,8 +95,8 @@ body {
 	box-shadow: 0 4px #2eb797;
 }
 
-.item-hover {
-	filter: drop-shadow(16px 16px 10px black);
+ .item-hover:hover {
+	filter: drop-shadow(16px 16px #64ffdbab);
 }
 
 /* #blob {
@@ -112,3 +112,5 @@ body {
 	background: linear-gradient(to right, aquamarine, mediumpurple);
 	filter: blur(200px);
 } */
+
+

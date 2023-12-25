@@ -4,10 +4,14 @@ import Experience from "../../components/Experience";
 import Projects from "../../components/Projects";
 import { AnchorSection } from "react-anchor-navigation";
 import Contact from "../../components/Contact";
+import ProfileLink from "../../components/profileLink";
 
 const Home = () => {
 	return (
-		<div className="max-w-7xl mx-auto">
+		<div className="max-w-7xl  mx-auto">
+			<div className="mt-20">
+				<ProfileLink></ProfileLink>
+			</div>
 			<div className="mt-40">
 				<Banner></Banner>
 			</div>

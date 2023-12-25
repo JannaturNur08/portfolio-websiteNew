@@ -37,31 +37,36 @@ const Contact = () => {
 	};
 
 	return (
-	<div className="">
-        <h2 className="text-5xl mb-5">Contact Me</h2>
-        	<form onSubmit={handleSubmit} className="flex flex-col gap-5 w-1/2 text-black">
-			<input
-				type="text"
-				placeholder="Your Name"
-				value={name}
-				onChange={(e) => setName(e.target.value)}
-                className="input input-bordered w-1/2"
-			/>
-			<input
-				type="email"
-				placeholder="Your Email"
-				value={email}
-				onChange={(e) => setEmail(e.target.value)}
-                className="input input-bordered w-1/2"
-			/>
-			<textarea
-				type="text"
-                placeholder="Type your message here...."
-				value={message}
-				onChange={(e) => setMessage(e.target.value)} className="input input-bordered h-20 w-1/2"></textarea>
-			<button type="submit" className="button-primary">Send Email</button>
-		</form>
-    </div>
+		<div className="">
+			<h2 className="text-5xl mb-5">Contact Me</h2>
+			<form
+				onSubmit={handleSubmit}
+				className="flex flex-col gap-5 w-1/2 mx-auto my-20 text-black">
+				<input
+					type="text"
+					placeholder="Your Name"
+					value={name}
+					onChange={(e) => setName(e.target.value)}
+					className="bg-[#112240] p-5 rounded-md border-2 border-primary focus:outline-white"
+				/>
+				<input
+					type="email"
+					placeholder="Your Email"
+					value={email}
+					onChange={(e) => setEmail(e.target.value)}
+					className="bg-[#112240] p-5 rounded-md border-2 border-primary focus:outline-white"
+				/>
+				<textarea
+					type="text"
+					placeholder="Type your message here...."
+					value={message}
+					onChange={(e) => setMessage(e.target.value)}
+					className="bg-[#112240] p-5 rounded-md border-2 border-primary focus:outline-white"></textarea>
+				<button type="submit" className="button-primary">
+					Send Email
+				</button>
+			</form>
+		</div>
 	);
 };
 
