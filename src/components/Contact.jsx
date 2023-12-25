@@ -37,26 +37,31 @@ const Contact = () => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="emailForm">
+	<div className="">
+        <h2 className="text-5xl mb-5">Contact Me</h2>
+        	<form onSubmit={handleSubmit} className="flex flex-col gap-5 w-1/2 text-black">
 			<input
 				type="text"
 				placeholder="Your Name"
 				value={name}
 				onChange={(e) => setName(e.target.value)}
+                className="input input-bordered w-1/2"
 			/>
 			<input
 				type="email"
 				placeholder="Your Email"
 				value={email}
 				onChange={(e) => setEmail(e.target.value)}
+                className="input input-bordered w-1/2"
 			/>
 			<textarea
-				cols="30"
-				rows="10"
+				type="text"
+                placeholder="Type your message here...."
 				value={message}
-				onChange={(e) => setMessage(e.target.value)}></textarea>
-			<button type="submit">Send Email</button>
+				onChange={(e) => setMessage(e.target.value)} className="input input-bordered h-20 w-1/2"></textarea>
+			<button type="submit" className="button-primary">Send Email</button>
 		</form>
+    </div>
 	);
 };
 
