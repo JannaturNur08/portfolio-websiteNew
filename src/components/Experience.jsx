@@ -1,4 +1,4 @@
-import { FaArrowRight } from "react-icons/fa6";
+
 
 const Experience = () => {
 	return (
@@ -18,24 +18,24 @@ const Experience = () => {
 							@<a href="https://playense.com/">Playense</a>
 						</span>
 					</h4>
-					<small className="">September 2020 - July 2022</small>
+					<small className="">September 2020 - July 2023</small>
 
 					<p className="mt-5 ">
 						With 3 years of hands-on involvement in the industry, I
 						have honed my skills in 3D modeling,
 						<br />
-						texturing, and rendering. My proficiency extends across
-						a diverse range of software, including <br />
-						industry staples such as Autodesk Maya, Blender, and
-						ZBrush. I have a keen eye for detail and a proven <br />
+						texturing,rendering,rigging and animation. My proficiency extends across
+						a diverse range of <br /> software, including 
+						industry staples such as PS, Blender,
+						ZBrush and Substance. I have a keen <br /> eye for detail and a proven 
 						ability to create visually stunning and technically
-						sound 3D assets for a variety of projects, from <br />
+						sound 3D assets <br /> for a variety of projects, from 
 						video games to virtual reality experiences. My work has
-						consistently demonstrated a balance between <br />
+						consistently <br /> demonstrated a balance between 
 						artistic creativity and technical precision, resulting
-						in captivating visuals that meet or exceed <br />
+						in captivating <br /> visuals that meet or exceed 
 						client expectations. I am adept at collaborating with
-						cross-functional teams, understanding project <br />
+						cross-functional  <br />teams, understanding project 
 						requirements, and delivering high-quality assets within
 						specified timelines.
 					</p>
