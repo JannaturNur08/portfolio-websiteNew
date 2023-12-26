@@ -5,7 +5,7 @@ const Projects = () => {
 		<div className="pt-40">
 			<h2 className="mb-24">Some Things I’ve Built</h2>
 			{/* project 1 */}
-			<div className="flex relative mt-12 justify-center ">
+			<div className="md:flex relative mt-12 justify-center ">
 				<div className="relative w-3/4">
 					<div className=" border-2 border-primary rounded-md w-full h-full absolute left-5 top-5 "></div>
 					<img
@@ -14,14 +14,14 @@ const Projects = () => {
 						alt=""
 					/>
 				</div>
-				<div className="bg-transparent text-right w-1/2">
+				<div className="bg-transparent md:text-right w-1/2 text-center mx-auto">
 					<h5 className=" font-bold text-primary">
 						Featured Project
 					</h5>
 					<h3>Tech Product Review</h3>
 
 					<div className="bg-[#112240] shadow-md">
-						<p className="bg-[#112240] p-5 mt-5  relative lg:w-[36rem] right-5  z-10">
+						<p className="bg-[#112240] p-5 mt-5  relative md:w-[36rem] w-[300px] right-5  z-10">
 							The technology-centric platform allows users to
 							engage in discussions, explore featured and{" "}
 							<span className="text-primary bg-transparent">
@@ -31,7 +31,7 @@ const Projects = () => {
 						</p>
 					</div>
 
-					<div className="flex flex-row-reverse mt-3 gap-2 ">
+					<div className="flex md:flex-row-reverse mt-3 gap-2 ">
 						<p>React </p>
 						<p>TailwindCSS</p>
 						<p>Express</p>
@@ -49,7 +49,7 @@ const Projects = () => {
 				</div>
 			</div>
 			{/* project 2 */}
-			<div className="flex relative mt-32 justify-center ">
+			<div className="md:flex relative mt-32 justify-center ">
 				<div className="bg-transparent text-left w-1/2">
 					<h5 className=" font-bold text-primary">
 						Featured Project

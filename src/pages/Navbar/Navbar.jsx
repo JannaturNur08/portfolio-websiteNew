@@ -1,12 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
-
 import "./Navbar.css";
-import { useContext, useState } from "react";
-import { AnchorContext, AnchorLink } from "react-anchor-navigation";
+import { useState } from "react";
+import { AnchorLink } from "react-anchor-navigation";
 
 const Navbar = () => {
 	const [isMenuOpen, setMenuOpen] = useState(false);
-	const { hash, sections } = useContext(AnchorContext);
 
 	const closeMenu = () => {
 		setMenuOpen(false);
@@ -16,6 +13,17 @@ const Navbar = () => {
 		<>
 			<li>
 				<AnchorLink
+					href="#banner"
+					activeClassName="active"
+					className={({ isActive, isPending }) =>
+						isPending ? "pending" : isActive ? "active " : ""
+					}
+					onClick={closeMenu}>
+					Home
+				</AnchorLink>
+			</li>
+			<li>
+				<AnchorLink
 					href="#about"
 					activeClassName="active"
 					className={({ isActive, isPending }) =>
@@ -23,6 +31,17 @@ const Navbar = () => {
 					}
 					onClick={closeMenu}>
 					About
+				</AnchorLink>
+			</li>
+			<li>
+				<AnchorLink
+					href="#education"
+					activeClassName="active"
+					className={({ isActive, isPending }) =>
+						isPending ? "pending" : isActive ? "active " : ""
+					}
+					onClick={closeMenu}>
+					Education
 				</AnchorLink>
 			</li>
 			<li>
@@ -52,11 +71,7 @@ const Navbar = () => {
 	return (
 		<div className="flex justify-between sticky-header  h-7 py-5 mx-auto container">
 			<div>
-				<img
-					src="https://i.ibb.co/Nt41bYK/logo-1.png"
-					alt=""
-					className="w-[50px]"
-				/>
+				<img src="" alt="" className="w-[50px]" />
 			</div>
 			<div className="flex p-5 text-center justify-center gap-10 font-mono list-none lg:hidden">
 				{/* Hamburger menu icon */}
